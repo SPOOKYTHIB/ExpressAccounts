@@ -8,7 +8,6 @@ const fs = require('fs');
 var nJwt = require('njwt');
 var secureRandom = require('secure-random');
 const alert = require('alert')
-const postCreate = require('./js/postCreate')
 const bodyParser = require('body-parser')
 var signingKey = secureRandom(256, {type: 'Buffer'});
 var passwordHash = require('password-hash');
@@ -44,7 +43,7 @@ app.route('/create')
         if (err){
             console.log(err);
         } else {
-        var obj = JSON.parse(data);
+        obj = JSON.parse(data);
         var encryptedPassword = passwordHash.generate(password);
         if (obj.users.length > 0) {
           new_id = (obj.users[obj.users.length-1].id)+1;
@@ -107,7 +106,7 @@ app.post('/login', (req, res) => {
 })
 
 app.get('/restricted', (req, res) => {
-  var token = req.cookies.jwt
+  token = req.cookies.jwt
   if (!token) {
     alert("You are not logged in.")
     res.end(res.render('connect'))
