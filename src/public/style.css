@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Newspaper";
+    src: url("fonts/ONT.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Eathoma";
+    src: url("fonts/EathomaSansFont.ttf") format('truetype');
+}
+
+h1 {
+    font-size: 75px;
+    font-family: "Eathoma";
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Arial';
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbarlinks {
+    font-family: 'Arial';
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+}
+
+.navbarlink {
+    margin-left: 2%;
+    text-decoration: underline;
+    color: white;
+}
+
+
+button {
+    font-size: x-large;
+    color: white;
+    background-color: #3f72aa;
+    border-radius: 4px;
+    border:none;
+    padding: 8 10;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #36608c;
+}
+
+#buttons {
+    width: 45%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register-container {
+    width: 50%;
+    height: auto;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 20px;
+}
+
+label {
+    font-weight: 400;
+    font-family: 'Arial';
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+input[type=submit] {
+    background-color: #3f72aa;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    height: 60px;
+}
+
+input[type=submit]:hover {
+    background-color: #36608c;
+}
+/* #login {
+    margin-top: 5%;
+}
+
+#test {
+    margin-top: 10%;
+} */
+
+/* a {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 20px 20px 20px 20px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+} */

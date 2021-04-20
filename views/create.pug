@@ -1,0 +1,23 @@
+html
+        head
+                include navbar.pug
+                style 
+                        include ../src/public/style.css
+
+        body
+            div(id="register-container")
+                form(id="register-form", action='http://localhost:3000/create', method='POST')
+                  label(for="Uname") Username
+                  input(type='text', name='username', id='username', value='', placeholder="Your username...")
+                  br
+                  label(for="Email") Email
+                  input(type='text', name='email', id='email', value='', placeholder="Your email...")
+                  br
+                  label(for="Password") Password
+                  input(type='password', name='password', id='password', value='', placeholder="Your password...")
+                  br
+                  |
+                  br
+                  |
+                  input(type='submit', value='Submit')
+

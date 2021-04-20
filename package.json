@@ -1,0 +1,36 @@
+{
+  "name": "express_accounts",
+  "version": "1.0.0",
+  "description": "A simple app that allows users to register, login, and access a page when logged in.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SPOOKYTHIB/ExpressAccounts.git"
+  },
+  "author": "Thibaut Raguin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SPOOKYTHIB/ExpressAccounts/issues"
+  },
+  "homepage": "https://github.com/SPOOKYTHIB/ExpressAccounts#readme",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-layout": "^0.1.0",
+    "fs": "0.0.1-security",
+    "jest": "^26.6.3",
+    "module": "^0.0.1",
+    "njwt": "^1.0.0",
+    "nodemon": "^2.0.7",
+    "password-hash": "^1.2.2",
+    "pug": "^3.0.2",
+    "react": "^17.0.2",
+    "secure-random": "^1.1.2"
+  }
+}
