@@ -6,7 +6,7 @@ var passwordHash = require('password-hash');
 var encryptedPassword = passwordHash.generate("TestPassword")
 var obj = JSON.parse(`{"users":[{"id":0,"username":"TestUser","email":"testmail@gmail.com","password":"${encryptedPassword}"}]}`)
 
-test('Log as an user whose email is mail@mail.com and password is password', () => {
+test('Log as an user whose email is testmail@gmail.com and password is TestPassword, and check if the token is valid', () => {
   var claims = {
     iss: "http://localhost:3000/",
     sub: obj.users[0].id
